@@ -42,7 +42,3 @@ for textfile in files:  # for every txt file
         sheet.append(text)
 
         wb.save(r'C:/Users/ray/OneDrive/test/excel/appending.xlsx')
-
-
-
-
