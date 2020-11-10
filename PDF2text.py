@@ -14,6 +14,7 @@ for infile in infiles:
     with pdfplumber.open(path_in + infile) as pdf:  # open all the files in Original CSR PDF file path
         for page_num in range(len(pdf.pages)):  # crop according the different page number
             #print("*********************"+str(page_num+1)+"********************************")  # from page 1 odd
+            print(infile)
             if (page_num % 2) == 0:
                 page = pdf.pages[page_num]
 
