@@ -5,7 +5,7 @@ from openpyxl import load_workbook
 path_text = r'C:\Users\ray\OneDrive\test\text\\'
 
 files = os.listdir(path_text)  # txt file directory
-pattern_1 = re.compile(r'人材活用 環境 企業統治 社会性\s\w{1,4}\s\w{1,4}\s\w{1,4}\s\w{1,4}\s[^a-zA-Z]{4,20}')  # re pattern
+pattern_1 = re.compile(r'人材活用 環境 企業統治 社会性\s.{4,20}\s[^a-zA-Z]{4,20}')  # re pattern
 pattern_2 = re.compile(r'人材活用 環境 企業統治 社会性\s.{4,20}')  # re pattern
 
 for textfile in files:  # for every txt file
