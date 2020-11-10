@@ -16,7 +16,7 @@ for textfile in files:  # for every txt file
         line = f.readlines()
         stock_code = line[0]
         name = line[1]
-
+        text.append(textfile)
         text.append(stock_code)
         text.append(name)
 
