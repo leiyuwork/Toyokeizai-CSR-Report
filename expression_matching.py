@@ -32,7 +32,7 @@ for textfile in files:  # for each txt file
             result.append('null or different pattern')
             text.append(result[0])
         else:  # if pattern 01-04 succeeded
-            text.append(result[0])  # append matching result(02)
+            text.append(result[0])  # append matching result
 
         print(text)  # confirm the matching result
 
