@@ -5,15 +5,15 @@ import pdfplumber
 import os
 
 path_in = r"C:\Users\ray\OneDrive\test\in\\"  # Original CSR PDF file path
-path_text = r"C:\Users\ray\OneDrive\test\text\\"  # Afterwards text file path
+path_text = r"C:\Users\ray\OneDrive\test\text\\"  # Text file path
 
 
 infiles = os.listdir(path_in)
 for infile in infiles:
-    text = []  # buckets for text
+    text = []  # List for text
     with pdfplumber.open(path_in + infile) as pdf:  # open all the files in Original CSR PDF file path
-        for page_num in range(len(pdf.pages)):  # crop according the different page number
-            #print("*********************"+str(page_num+1)+"********************************")  # from page 1 odd
+        for page_num in range(len(pdf.pages)):  # crop according to even/odd page number
+            #print("*********************"+str(page_num+1)+"********************************")  # from page 1, odd
             print(infile)
             if (page_num % 2) == 0:
                 page = pdf.pages[page_num]
