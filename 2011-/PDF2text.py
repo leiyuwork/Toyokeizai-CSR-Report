@@ -4,8 +4,8 @@
 import pdfplumber
 import os
 
-path_in = r"C:\Users\ray\OneDrive\test\in\\"  # Original CSR PDF file path
-path_text = r"C:\Users\ray\OneDrive\test\text\\"  # Text file path
+path_in = r"C:\Users\ray\Downloads\２０１３年データCSR部分PDF（うくん）\in\\"  # Original CSR PDF file path
+path_text = r"C:\Users\ray\Downloads\２０１３年データCSR部分PDF（うくん）\out\\"  # Text file path
 
 
 infiles = os.listdir(path_in)
